@@ -1,4 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
+const history = createWebHistory(process.env.BASE_URL);
 const routes = [
     {
         path: "/",
@@ -19,8 +20,11 @@ const routes = [
 
 // 导出路由
 const router = createRouter({
-    history: createWebHistory(),
+    history,
     routes
+});
+router.beforeEach((to, from, next) => {
+    next();
 });
 
 export default router;
