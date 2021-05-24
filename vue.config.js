@@ -4,7 +4,7 @@ const resolve = dir => path.join(__dirname, dir);
 //const vantTheme = path.resolve(__dirname, "./src/assets/styles/theme.less");
 
 module.exports = {
-  publicPath: "./", // 公共路径
+  publicPath: "./loginIndexAndErrorLog", // 公共路径
   indexPath: "index.html", // 相对于打包路径index.html的路径
   outputDir: process.env.outputDir || "dist", // 'dist', 生产环境构建文件的目录
   //outputDir: process.env.outputDir || "docs",
